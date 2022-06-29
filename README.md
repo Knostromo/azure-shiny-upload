@@ -31,7 +31,7 @@
         - <img width="600" alt="image" src="https://user-images.githubusercontent.com/47578869/176476455-939a09c3-7044-4ebe-944f-ae46781fbc18.png">
     - CSV
         - <img width="600" alt="image" src="https://user-images.githubusercontent.com/47578869/176476661-06aeb4ce-2d47-48f4-9548-9fdb901c14d3.png">
-    - **The SHA of the uploaded files matched**
+    - **The SHA of the uploaded files matched** and all table outputs worked.
 
 ### Azure ML Compute Instance specific issues
 - If you run the same app on Azure ML compute instance, you will see the **SHAs are different**.
