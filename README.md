@@ -3,7 +3,7 @@
 ## Background
 - There might be unannounced changes on Azure ML compute instance during May/Jun 2022
 - Initially the `fileInput` function (from `shiny`) stopped working 
-    - I only tested xlsx, xls and csv files.
+    - I only tested xlsx, xls and csv files. There might be more issues with other filetypes
     - the SHA uploaded of the uploaded files will be different.
     
 - Then Azure ML compute instance would just stopped provisioning RStudio
@@ -42,6 +42,23 @@
     - CSV
         - <img width="600" alt="image" src="https://user-images.githubusercontent.com/47578869/176477405-9ed93df9-0af8-4166-919c-30e9314ed273.png">
     - **All SHA of the uploaded files are different**, but ASCII based files (e.g. CSV) still works.
+
+### File encoding for reference
+- These are the *estimated* encoding of the raw test data
+
+```R
+! Multiple files in zip: reading ''_rels/.rels''
+           iris.csv iris.xls       iris.xlsx
+encoding   "ASCII"  "windows-1250" "ASCII"  
+confidence 1        0.22           1        
+```
+
+- Source code
+```R
+sapply(list.files("DATA/"), function(x) {
+  readr::guess_encoding(paste0("DATA/",x))
+  })
+```
 
 
 ### Repo Structure
