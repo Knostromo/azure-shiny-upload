@@ -1,7 +1,7 @@
-# Azure Shiny Upload Test
+# Azure Shiny `fileInput` Issues/Tests
 
 ## Background
-- There might be unannounced changes on Azure ML compute instance during May/Jun 2022
+- There might be unannounced changes on Azure ML compute instance during May/June 2022
 - Initially the `fileInput` function (from `shiny`) stopped working 
     - I only tested xlsx, xls and csv files. There might be more issues with other filetypes
     - the SHA uploaded of the uploaded files will be different.
@@ -48,7 +48,6 @@
 - These are the *estimated* encoding of the raw test data
 
 ```R
-! Multiple files in zip: reading ''_rels/.rels''
            iris.csv iris.xls       iris.xlsx
 encoding   "ASCII"  "windows-1250" "ASCII"  
 confidence 1        0.22           1        
