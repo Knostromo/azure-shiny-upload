@@ -42,6 +42,7 @@
     - CSV
         - <img width="600" alt="image" src="https://user-images.githubusercontent.com/47578869/176477405-9ed93df9-0af8-4166-919c-30e9314ed273.png">
     - **All SHA of the uploaded files are different**, but ASCII based files (e.g. CSV) still works.
+    - **NOTE** this used to work fine on Azure until ~ mid-May 2022 (I think)
 
 ### File encoding for reference
 - These are the *estimated* encoding of the raw test data
