@@ -15,8 +15,8 @@
     - Specifically I look at these properties of the uploaded file:
         - location
         - SHA
-        - *Estimated* encoding
-        - *if possible* table outpu
+        - *Estimated* file encoding
+        - *if possible* render table output
 
 ## Shiny Upload App
 - Clone the repo to your machine/env.
